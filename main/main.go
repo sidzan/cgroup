@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../cgroup"
-	"../resources"
+	"cgroup/cgroup"
+	"cgroup/resources"
 	"fmt"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	fmt.Println()
 
 	resources.CpuCores()
-	resources.Memory()
+	//resources.Memory()
 	resources.MemoryPath()
 
 }

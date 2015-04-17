@@ -12,7 +12,7 @@ func MemoryPath() {
 	if lookErr != nil {
 		panic(lookErr)
 	}
-	args := []string{"ls", "/home/sijan/cgroup/resources/"}
+	args := []string{"ls"}
 	env := os.Environ()
 	execErr := syscall.Exec(binary, args, env)
 	if execErr != nil {
